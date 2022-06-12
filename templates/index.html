@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Final Project by Puja Roy</title>
+    <link rel="stylesheet" href="../static/style.css">
+  <body>
+
+    <div class="container">
+      <h1>Collecting Weight and Height for BMI</h1>
+      <h2>Please fill the entires to get poulations statistics on Weight, Height and BMI</h2>
+<br>
+<form class="" action="{{url_for('thankyou')}}" method="POST">
+  <!-- name is for python to pull off user's input: give me the value of input what the name is email_name -->
+  <input type="email" name="email_name" required value="" title="Your Info will be safe with us" placeholder="Enter your Email" class="test2">
+<br><br>
+  <input type="number" min="50" max="300" name="height_name" required value="" title="Your Info will be safe with us" placeholder="Enter your Height in Meter" class="test1">
+<br><br>
+  <input type="number" min="20" max="300" name="weight_name" required value="" title="Your Info will be safe with us" placeholder="Enter your Weight in Kg" class="test1">
+<!-- define the role of the button -->
+<br><br>
+  <button type="submit" name="button" style="padding:5px 20px">Submit</button>
+</form>
+
+    </div>
+
+  </body>
+</html>
